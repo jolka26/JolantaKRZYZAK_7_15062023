@@ -1,10 +1,10 @@
+import Banner from "../../components/Banner";
 
 function Home() {
   return (
     <div>
-        <p>
-          KASA page d'accueil
-        </p>
+    <Banner />
+       
     </div>
   );
 }

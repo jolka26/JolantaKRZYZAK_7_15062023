@@ -4,13 +4,17 @@ import '../Footer/index.css'
 
 
 function Footer() {
-   
+
+    const effectiveYear = new Date().getFullYear();
+
     return (
       <footer>
         <Link to="/">
             <img src={logoFooter} alt="logo_Kasa" />
         </Link>
-        <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+        <p className="footer-text"> 
+        &copy;
+        {effectiveYear} Kasa. All rights reserved</p>
       </footer>
     )
   }

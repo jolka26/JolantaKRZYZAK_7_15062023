@@ -7,7 +7,10 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Error from './components/Error'
 import Footer from './components/Footer'
- 
+// import './styles/GlobalStyle.css'
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
