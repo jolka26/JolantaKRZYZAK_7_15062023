@@ -11,17 +11,31 @@ header {
     width: auto;
     height: 4rem;
 }
+
 .link-home {
    padding-right: 5rem;
+   color: #FF6060;
+   font-size: 1.5rem;
 }
 
 .link-about {
    padding-right: 8rem;
+   color: #FF6060;
+   font-size: 1.5rem;
 }
 
-.link-about
-.link-home {
-    color: #FF6060;
+.link-about:link, 
+.link-home:link {
     text-decoration: none;
+}
 
+.link-about:hover, 
+.link-home:hover {
+    text-decoration: underline;
+}
+
+.link-about:focus, 
+.link-home:focus {
+    text-decoration: underline;
+    font-size: 1.8rem;
 }
