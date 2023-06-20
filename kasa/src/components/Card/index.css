@@ -1,0 +1,35 @@
+.card {
+    color: white;
+	background-color: #FF6060;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    border-radius: 25px;
+    background:linear-gradient(180deg, rgba(255,96,96) 65%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card-image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link-appartment {
+    text-decoration: none;
+}
+
+.link-appartment:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+}
+

@@ -1,0 +1,38 @@
+.apartment {
+    background-color: #FF6060;
+    margin: 5rem;
+}
+.apartment-images {
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        object-fit: cover;
+    
+}
+.apartment-content {
+
+}
+
+.apartment-informations {
+
+}
+
+.apartment-title {
+
+}
+.apartment-location {
+
+}
+.apartment-tags {
+
+}
+.apartment-profil {
+
+}
+
+.apartment-stars {
+
+}
+.apartment-dropdown {
+
+}
