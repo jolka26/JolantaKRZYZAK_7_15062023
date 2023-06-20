@@ -1,25 +1,32 @@
 import '../Apartment/index.css'
+import  logements  from '../../data/logement.json'
+import { useParams } from 'react-router-dom';
 
 function Apartment(){
-  
+  const { id } = useParams();
+  const logement = logements.find((logement) => logement.id === id );
+  console.log(logement.title)
 return (
 
  <div className="apartment">
-   <img className="apartment-images" src="" alt="" />
+   <img className="apartment-images" src={logement.pictures[1]} alt="" />
 
     <div className="apartment-content">
       <div className="apartment-informations">
-        <h1 className="apartment-title">title</h1>
-        <p className="apartment-location">location</p>
-        <p className="apartment-tags"> tags</p>
-        <p className="apartment-profil">profil</p>
-        <p className="apartment-stars"> stars</p>
+        <h1 className="apartment-title">{logement.title}</h1>
+        <p className="apartment-location">{logement.location}</p>
+        <p className="apartment-tags"> {logement.tags}</p>
+        <div className="apartment-profil">
+          <p>{logement.host.name }  </p>
+          <img src={logement.host.picture} alt= " photo profil" /> 
+        </div>
+        <p className="apartment-stars"> {logement.rating}</p>
       </div>
     </div>
 
     <div className="apartment-dropdown">
-      <p>description</p> 
-      <p>equipments</p>
+      <p>{logement.description}</p> 
+      <p>{logement.equipments}</p>
     </div>
  </div>
 
