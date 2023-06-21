@@ -1,11 +1,28 @@
+import '../About/index.css'
+import Banner from '../../components/Banner'
+import Collapse from '../../components/Collapse'
+import aboutBanner from '../../assets/IMG_about.png'
+import descriptions from'../../data/description.json'
 
 function About() {
+
     return (
-      <div>
-          <p>
-            KASA page apropos yeah
-          </p>
+ 
+      <div className="about">
+      <Banner image={aboutBanner}/>
+
+      {/* <div className="about-collapse"> */}
+        { descriptions.map((item) => {
+          return (
+            <div className="collapse-container" key={item.id}>
+            <Collapse content={item.content} title={item.title}/>
+            </div>
+          )
+        })}
+      {/* </div>    */}
+      <p>CHANGE  PHOTO BANNER!!!!! and text !!!!  kasa apropos</p>
       </div>
+  
     );
   }
   

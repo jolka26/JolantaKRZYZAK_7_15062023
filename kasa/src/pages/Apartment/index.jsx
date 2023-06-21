@@ -7,10 +7,10 @@ function Apartment(){
   const logement = logements.find((logement) => logement.id === id );
   console.log(logement.title)
 return (
-
- <div className="apartment">
+<main className="apartment">
+ <div className="apartment-carusele">
    <img className="apartment-images" src={logement.pictures[1]} alt="" />
-
+  <div/>
     <div className="apartment-content">
       <div className="apartment-informations">
         <h1 className="apartment-title">{logement.title}</h1>
@@ -18,7 +18,7 @@ return (
         <p className="apartment-tags"> {logement.tags}</p>
         <div className="apartment-profil">
           <p>{logement.host.name }  </p>
-          <img src={logement.host.picture} alt= " photo profil" /> 
+          <img src={logement.host.picture} alt= "profil" /> 
         </div>
         <p className="apartment-stars"> {logement.rating}</p>
       </div>
@@ -29,7 +29,7 @@ return (
       <p>{logement.equipments}</p>
     </div>
  </div>
-
+</main>
 );
 
 }
