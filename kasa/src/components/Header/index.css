@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* font-family: 'Montserrat' */
  
 }
 .logo {
@@ -15,13 +16,16 @@ header {
 .link-home {
    padding-right: 5rem;
    color: #FF6060;
-   font-size: 1.5rem;
+   font-size: 24px;
+   font-family: 'Montserrat';
+ 
 }
 
 .link-about {
    padding-right: 8rem;
    color: #FF6060;
-   font-size: 1.5rem;
+   font-size: 24px;
+   font-family: 'Montserrat';
 }
 
 .link-about:link, 
@@ -37,5 +41,5 @@ header {
 .link-about:focus, 
 .link-home:focus {
     text-decoration: underline;
-    font-size: 1.8rem;
+    font-size: 24px;
 }

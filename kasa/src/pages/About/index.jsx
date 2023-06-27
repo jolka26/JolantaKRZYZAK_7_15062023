@@ -2,7 +2,7 @@ import '../About/index.css'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 import aboutBanner from '../../assets/IMG_about.png'
-import descriptions from'../../data/description.json'
+import descriptions from '../../data/description.json'
 
 function About() {
 
