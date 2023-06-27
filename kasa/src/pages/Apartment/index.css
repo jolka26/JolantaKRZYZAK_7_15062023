@@ -10,6 +10,9 @@
     
 }
 .apartment-content {
+    display:flex;
+    justify-content: space-between;
+
 
 }
 
@@ -18,12 +21,13 @@
 }
 
 .apartment-title {
-
+    font-size: 18px;
 }
 .apartment-location {
 
 }
 .apartment-tags {
+display: flex;
 
 }
 .apartment-profil {

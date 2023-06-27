@@ -1,0 +1,39 @@
+.slider {
+    position: relative;
+    background-color: #FFFFFF;
+
+}
+
+.slider-active {
+    height: 415px;
+    width: 100%;
+ 
+}
+
+.slide-image{
+    width: inherit;
+    height:inherit;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.next, .previous{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.next {
+    right:0;
+}
+
+.number {
+    display: block;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+}
+

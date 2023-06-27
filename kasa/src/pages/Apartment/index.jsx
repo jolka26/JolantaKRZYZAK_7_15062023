@@ -1,15 +1,19 @@
 import '../Apartment/index.css'
 import  logements  from '../../data/logement.json'
-import { useParams } from 'react-router-dom';
+import Slider from '../../components/Slider'
+// import Collapse from '../../components/Collapse'
+import { useParams} from 'react-router-dom';
 
 function Apartment(){
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id );
-  console.log(logement.title)
+  console.log(logement)
+  console.log(logement.pictures)
+
 return (
 <main className="apartment">
  <div className="apartment-carusele">
-   <img className="apartment-images" src={logement.pictures[1]} alt="" />
+ <Slider slides={logement.pictures} />
   <div/>
     <div className="apartment-content">
       <div className="apartment-informations">
@@ -30,8 +34,6 @@ return (
     </div>
  </div>
 </main>
-);
-
+)
 }
-
 export default Apartment
