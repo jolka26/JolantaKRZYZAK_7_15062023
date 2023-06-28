@@ -23,11 +23,11 @@
 .apartment-title {
     padding: 1rem 2rem 0 ;
     margin: 0;
-    font-size: 46px;
+    font-size: 30px;
 }
 .apartment-location {
     padding: 1rem 2rem 1rem ;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 
@@ -43,10 +43,6 @@
     right: 6rem;
     top: 50rem;
     /* margin: 50px; */
-}
-
-.apartment-stars {
-
 }
 
 .apartment-dropdown {

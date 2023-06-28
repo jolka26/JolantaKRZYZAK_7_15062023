@@ -3,6 +3,7 @@ import  logements  from '../../data/logement.json'
 import Slider from '../../components/Slider'
 import Tags from '../../components/Tag'
 import Host from '../../components/Host'
+import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
 import { useParams} from 'react-router-dom';
 
@@ -28,7 +29,7 @@ return (
         </div>
         <div className="apartment-profil">
          <Host host={logement.host}/>
-         <p className="apartment-stars"> {logement.rating}</p>
+         <Rating rate={logement.rating}/>
         </div>
         
       </div>
