@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../Collapse/index.css'
-
+import up from '../../assets/Vector_up.png'
+import down from '../../assets/Vector_down.png'
 
 function Collapse ({title, content}){
 
@@ -12,11 +13,14 @@ function Collapse ({title, content}){
     return (     
  
     <div className="collapse">
-            <div onClick={display} className="collapse-button">
+            <div   className="collapse-button">
                 <h2 className="collapse-title">{title}</h2>
+                <p onClick={display}>       
+                 {isOpen ? (<img src={up} alt="fleche-up" className="fleche-up"/>) : (<img src={down} alt="fleche-down" className="fleche-down"/>)}
+                 </p>
             </div>
             <div className="collapse-text" >
-                {isOpen && <p>{content}</p>}
+                {isOpen && <p> {content} </p>}
             </div>
     </div>
 
@@ -28,3 +32,4 @@ function Collapse ({title, content}){
 }
 
 export default Collapse;
+

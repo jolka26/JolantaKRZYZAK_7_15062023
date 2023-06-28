@@ -14,6 +14,7 @@ function Apartment(){
 
 return (
 <main className="apartment">
+
  <Slider slides={logement.pictures} />
   <div/>
     <div className="apartment-content">

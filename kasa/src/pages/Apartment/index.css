@@ -13,6 +13,7 @@
 .apartment-content {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .apartment-informations {
@@ -41,6 +42,7 @@
     justify-content: flex-end;
     right: 6rem;
     top: 50rem;
+    /* margin: 50px; */
 }
 
 .apartment-stars {
