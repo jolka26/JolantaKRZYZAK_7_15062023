@@ -9,26 +9,39 @@ function Collapse ({title, content}){
     const display = () => {
         setIsOpen(!isOpen)
     }
+    const liste = () => {
+        if (Array.isArray(content)) {
+        return (
+            <div className="colapse-text">
+            {content.map((item, index) => 
+            <p key={index} className="collapse-list">{item}</p>)}
+            </div>
+        )}
+        return(
+            <div className="colapse-text">
+            <p>{content}</p>
+            </div>
+        )
+    }
 
+  
     return (     
  
     <div className="collapse">
-            <div   className="collapse-button">
+            <div  onClick={display} className="collapse-button">
                 <h2 className="collapse-title">{title}</h2>
-                <p onClick={display}>       
+                <p >       
                  {isOpen ? (<img src={up} alt="fleche-up" className="fleche-up"/>) : (<img src={down} alt="fleche-down" className="fleche-down"/>)}
                  </p>
             </div>
             <div className="collapse-text" >
-                {isOpen && <p> {content} </p>}
+                {isOpen && liste() }
+
             </div>
     </div>
 
 
     )
-
-
-
 }
 
 export default Collapse;
