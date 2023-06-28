@@ -31,7 +31,9 @@ function Collapse ({title, content}){
             <div  onClick={display} className="collapse-button">
                 <h2 className="collapse-title">{title}</h2>
                 <p >       
-                 {isOpen ? (<img src={up} alt="fleche-up" className="fleche-up"/>) : (<img src={down} alt="fleche-down" className="fleche-down"/>)}
+                 {isOpen ? (<img src={up} alt="fleche-up" className="fleche-up"/>
+                 ) : (
+                <img src={down} alt="fleche-down" className="fleche-down"/>)}
                  </p>
             </div>
             <div className="collapse-text" >

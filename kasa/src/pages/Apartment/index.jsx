@@ -10,8 +10,8 @@ import { useParams} from 'react-router-dom';
 function Apartment(){
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id );
-  console.log(logement)
-  console.log(logement.pictures)
+  // console.log(logement)
+  // console.log(logement.pictures)
 
 return (
 <main className="apartment">
@@ -31,7 +31,6 @@ return (
          <Host host={logement.host}/>
          <Rating rate={logement.rating}/>
         </div>
-        
       </div>
     </div>
 
