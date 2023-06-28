@@ -39,8 +39,8 @@ button {
     background-color: #FF6060;
     border: none;
     width: 100%;
-    color: #FFFFFF;
-    font-family: 'Montserrat';
+    color: #FFFFFF !important;
+    /* font-family: 'Montserrat'; */
     font-size: 18px;
 }
 

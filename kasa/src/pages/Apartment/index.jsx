@@ -1,7 +1,9 @@
 import '../Apartment/index.css'
 import  logements  from '../../data/logement.json'
 import Slider from '../../components/Slider'
-// import Collapse from '../../components/Collapse'
+import Tags from '../../components/Tag'
+import Host from '../../components/Host'
+import Collapse from '../../components/Collapse'
 import { useParams} from 'react-router-dom';
 
 function Apartment(){
@@ -12,27 +14,30 @@ function Apartment(){
 
 return (
 <main className="apartment">
- <div className="apartment-carusele">
  <Slider slides={logement.pictures} />
   <div/>
     <div className="apartment-content">
       <div className="apartment-informations">
         <h1 className="apartment-title">{logement.title}</h1>
         <p className="apartment-location">{logement.location}</p>
-        <p className="apartment-tags"> {logement.tags}</p>
-        <div className="apartment-profil">
-          <p>{logement.host.name }  </p>
-          <img src={logement.host.picture} alt= "profil" /> 
+        <div className="apartment-tags"> 
+        {logement.tags.map((tag,index) => (
+          <Tags key={index} tagName={tag} />
+        ))}
         </div>
-        <p className="apartment-stars"> {logement.rating}</p>
+        <div className="apartment-profil">
+         <Host host={logement.host}/>
+         <p className="apartment-stars"> {logement.rating}</p>
+        </div>
+        
       </div>
     </div>
 
     <div className="apartment-dropdown">
-      <p>{logement.description}</p> 
-      <p>{logement.equipments}</p>
+      <Collapse title="Description" content={logement.description}/> 
+      <Collapse title="Équipements" content={logement.equipments}/>
     </div>
- </div>
+
 </main>
 )
 }

@@ -5,14 +5,14 @@
 }
 
 .slider-active {
-    height: 415px;
+    height: 600px;
     width: 100%;
  
 }
 
 .slide-image{
     width: inherit;
-    height:inherit;
+    height: inherit;
     border-radius: 15px;
     object-fit: cover;
 }

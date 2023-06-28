@@ -1,42 +1,54 @@
 .apartment {
-    background-color: #FF6060;
-    margin: 5rem;
+    background-color: #FFFFFF;
+    margin : 0 5rem 5rem ;
 }
+
 .apartment-images {
-        width: 100px;
-        height: 100px;
-        border-radius: 25px;
-        object-fit: cover;
-    
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    object-fit: cover;
 }
+
 .apartment-content {
-    display:flex;
-    justify-content: space-between;
-
-
+    display: flex;
+    flex-direction: column;
 }
 
 .apartment-informations {
-
+    justify-content: space-between;
 }
 
 .apartment-title {
-    font-size: 18px;
+    padding: 1rem 2rem 0 ;
+    margin: 0;
+    font-size: 46px;
 }
 .apartment-location {
+    padding: 1rem 2rem 1rem ;
+    font-size: 24px;
 
 }
-.apartment-tags {
-display: flex;
 
+.apartment-tags {
+    display: flex;
+    font-size: 18px;
 }
 .apartment-profil {
-
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 6rem;
+    top: 50rem;
 }
 
 .apartment-stars {
 
 }
-.apartment-dropdown {
 
+.apartment-dropdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
 }

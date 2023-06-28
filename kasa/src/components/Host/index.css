@@ -1,0 +1,14 @@
+.host-profil{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.host-name {
+    margin: 0;
+    text-align: end;
+    font-size: 24px;
+}
+
+.host-image {
+    border-radius: 100%;
+}

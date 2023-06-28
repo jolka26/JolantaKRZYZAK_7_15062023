@@ -8,7 +8,7 @@ import About from './pages/About'
 import Apartment from './pages/Apartment'
 import Error from './components/Error'
 import Footer from './components/Footer'
-// import './styles/GlobalStyle.css'
+import './styles/GlobalStyle.css'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

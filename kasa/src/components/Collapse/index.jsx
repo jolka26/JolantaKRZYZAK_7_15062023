@@ -12,16 +12,14 @@ function Collapse ({title, content}){
     return (     
  
     <div className="collapse">
-        {/* <div className="collapse-container"> */}
-            <button onClick={display} className="collapse-button">
+            <div onClick={display} className="collapse-button">
                 <h2 className="collapse-title">{title}</h2>
-            </button>
-           
-        <div className="collapse-text" >
-            {isOpen && <p>{content}</p>}
             </div>
-        {/* </div> */}
+            <div className="collapse-text" >
+                {isOpen && <p>{content}</p>}
+            </div>
     </div>
+
 
     )
 

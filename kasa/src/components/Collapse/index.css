@@ -1,40 +1,35 @@
 
 .collapse {
-margin: 15rem;
-border-radius: 25px;
-justify-content: center;
-align-items: center;
-/* max-height: 50px; */
+    display: flex; 
+    flex-direction: column;
+    padding: 1.5rem;
+   
+    
+
 }
-
-
 .collapse-button {
     background-color: #FF6060;
-    border-radius: 10px;
-    border: none;
-    width: 100%;
-   
+    border-radius: 15px 15px 10px 10px;;
+    width: 80%;
 }
 
 .collapse-title {
-
     color: #FFFFFF;
-    border-radius: 15px;
-}
-
-.collapse-text{
-    background-color: #E5E5E5;
-    color: #FF6060;
-    border-radius:   0px 0px 15px 15px;
-    font-size: 1.4rem;
-    margin-top: -5px;
-}
-
-p{
-    margin: 0;
-    padding: 2rem;
-}
-
-
-
+    border-radius:  15px ; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
     
+}
+
+.collapse-text {
+    background-color: #E5E5E5;
+    border-radius: 3px 3px 15px 15px;
+    width: 80%;
+    font-size: 18px;
+}
+
+p{   padding: 2rem;
+    margin: 0;
+ 
+}

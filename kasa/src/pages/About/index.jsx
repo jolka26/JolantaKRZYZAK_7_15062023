@@ -11,7 +11,6 @@ function About() {
       <div className="about">
       <Banner image={aboutBanner}/>
 
-      {/* <div className="about-collapse"> */}
         { descriptions.map((item) => {
           return (
             <div className="collapse-container" key={item.id}>
@@ -19,8 +18,7 @@ function About() {
             </div>
           )
         })}
-      {/* </div>    */}
-      <p>CHANGE  PHOTO BANNER!!!!! and text !!!!  kasa apropos</p>
+   
       </div>
   
     );
