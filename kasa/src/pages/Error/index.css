@@ -29,7 +29,19 @@
 
 /* Responsywność dla urządzeń mobilnych */
 @media only screen and (max-width: 768px) {
- 
+      .error-image {
+        height: 50%;
+        width: 50%;
+        margin-top: 3rem;
+    }
+    .error-text {
+        margin: 1.5rem 2.5rem;
+        font-size: 18px;
+    }
+    .error-link {
+        font-size: 14px;
+        margin: 2rem 0;
+    }
 }
 
 /* Responsywność dla tabletów */

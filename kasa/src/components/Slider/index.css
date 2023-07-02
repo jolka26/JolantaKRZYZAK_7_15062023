@@ -44,7 +44,14 @@
     }
     .next, .previous {
         top: 10px;
-        align-items: center;
+    
+    }
+    .right-arrow, .left-arrow{
+        height: 60px;
+        width: 60px;
+    }
+    .number{
+        font-size: 18px;
     }
 
 }

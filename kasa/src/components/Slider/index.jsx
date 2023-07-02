@@ -33,12 +33,12 @@ function Slider ({slides}) {
                 )
             })}
             <div className="previous"> 
-                {length > 1 && (<p className="left-arrow" onClick={prevImage}>
-                    <img src={leftArrow} alt="" /></p>)}
+                {length > 1 && (<p onClick={prevImage}>
+                    <img src={leftArrow} alt="" className="left-arrow" /></p>)}
             </div>
             <div className="next">    
-                {length > 1 && (<p className="right-arrow" onClick={nextImage}>
-                    <img src={rightArrow} alt="" /></p>)}
+                {length > 1 && (<p onClick={nextImage}>
+                    <img src={rightArrow} alt="" className="right-arrow"/></p>)}
             </div>
         </section>
     )

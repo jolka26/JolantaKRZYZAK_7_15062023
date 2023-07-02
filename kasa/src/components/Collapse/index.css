@@ -6,7 +6,7 @@
 
 .collapse-button {
     background-color: #FF6060;
-    border-radius: 15px 15px 10px 10px;;
+    border-radius: 15px 15px 10px 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -45,3 +45,41 @@ p {
     align-items: center;
 }
 
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .collapse {
+        margin-top: 0.5rem;
+    }
+    .collapse-button {
+        border-radius: 5px;
+        height: 30px;
+    }    
+    .collapse-text {
+        background-color: #E5E5E5;
+        border-radius: 3px 3px 15px 15px;
+        width: 100%;
+        line-height: 1.5;
+    }
+    .collapse-title {
+        font-size: 14px;
+    }
+    p {   
+        font-size: 14px;
+        padding: 0.3rem;
+        margin: 10px;
+    }
+    .collapse-list {
+        margin-left: 1rem;
+    }
+    .fleche-down, .fleche-up {
+        height: 10px;
+        padding: 0;
+        margin-top: -5px;
+    }
+    
+}
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}

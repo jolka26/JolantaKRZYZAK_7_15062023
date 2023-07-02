@@ -5,3 +5,20 @@
 .collapse-container {
     margin: 0 12rem 0;
 }
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .about {
+        margin: 0;
+    }
+    .collapse-container {
+        margin: 1rem;
+    }
+    
+}
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
