@@ -1,23 +1,21 @@
 .slider {
     position: relative;
     background-color: #FFFFFF;
-
 }
 
 .slider-active {
     height: 600px;
     width: 100%;
- 
 }
 
-.slide-image{
+.slide-image {
     width: inherit;
     height: inherit;
     border-radius: 15px;
     object-fit: cover;
 }
 
-.next, .previous{
+.next, .previous {
     position: absolute;
     top: 0;
     height: 100%;
@@ -34,6 +32,28 @@
     color: #FFFFFF;
     position: absolute;
     bottom: 25px;
-    left: 50%;
+    left: 45%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .slider-active {
+        height: 250px;
+        width: 100%;
+    }
+    .next, .previous {
+        top: 10px;
+        align-items: center;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .slider-active {
+        margin-top: 1.5rem;
+        height:450px;
+        
+    }
+}

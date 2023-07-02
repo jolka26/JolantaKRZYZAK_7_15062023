@@ -24,7 +24,6 @@ function Slider ({slides}) {
 
     return (
         <section className="slider">
-
             {slides.map((image, index ) => {
                 return(
                     <div key= {index} className={index === current ? "slider-active" : "slider"}>
@@ -34,15 +33,13 @@ function Slider ({slides}) {
                 )
             })}
             <div className="previous"> 
-            {length > 1 && (<p className="left-arrow" onClick={prevImage}>
-                <img src={leftArrow} alt="" /></p>)}
+                {length > 1 && (<p className="left-arrow" onClick={prevImage}>
+                    <img src={leftArrow} alt="" /></p>)}
             </div>
             <div className="next">    
-            {length > 1 && (<p className="right-arrow" onClick={nextImage}>
-                <img src={rightArrow} alt="" /></p>)}
+                {length > 1 && (<p className="right-arrow" onClick={nextImage}>
+                    <img src={rightArrow} alt="" /></p>)}
             </div>
-
-         
         </section>
     )
 }

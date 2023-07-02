@@ -13,3 +13,13 @@ footer {
     padding-top: 24px;
     font-family: 'Montserrat';
 }
+
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+ 
+.footer-text {
+   font-size: 12px;
+}
+}

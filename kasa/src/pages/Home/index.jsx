@@ -5,15 +5,16 @@ import Gallery from "../../components/Gallery";
 
 
 function Home() {
-  return (
-    <main>
-      <Banner image={ homeBanner } text={"Chez vous, partout et ailleurs"}/>
-      <div>
-        <Gallery />
-      </div>
-    </main>
 
-  );
+    return (
+      <main>
+        <Banner image={ homeBanner } text={"Chez vous, partout et ailleurs"}/>
+        <div>
+          <Gallery />
+        </div>
+      </main>
+
+    )
 }
 
-export default Home;
+export default Home

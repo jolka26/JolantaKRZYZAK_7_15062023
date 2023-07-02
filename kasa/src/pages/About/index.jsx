@@ -9,20 +9,19 @@ function About() {
     return (
  
       <div className="about">
-      <Banner image={aboutBanner}/>
+        <Banner image={aboutBanner}/>
 
-        { descriptions.map((item) => {
-          return (
-            <div className="collapse-container" key={item.id}>
-            <Collapse content={item.content} title={item.title}/>
-            </div>
-          )
-        })}
-   
+          {descriptions.map((item) => {
+            return (
+              <div className="collapse-container" key={item.id}>
+                <Collapse content={item.content} title={item.title}/>
+              </div>
+            )
+          })}
       </div>
   
-    );
+    )
   }
   
-  export default About;
+  export default About
   

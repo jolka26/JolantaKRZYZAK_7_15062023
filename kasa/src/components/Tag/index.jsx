@@ -8,4 +8,4 @@ function Tags({tagName}) {
 
 }
 
-export default Tags;
+export default Tags

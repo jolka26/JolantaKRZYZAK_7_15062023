@@ -5,13 +5,13 @@ import '../Header/index.css'
 function Header() {
     return (
         <header>
-            <Link to="/"> 
+            <Link to="/home"> 
                 <img className="logo" src={logo} alt="Logo_KASA" />
             </Link>
-        <nav>
-            <Link className="link-home" to="/">Accueuil</Link>
-            <Link className="link-about" to="/about">A Propos</Link>
-        </nav>
+            <nav>
+                <Link className="link-home" to="/home">Accueuil</Link>
+                <Link className="link-about" to="/about">A Propos</Link>
+            </nav>
         </header>
     )
 }
