@@ -81,5 +81,14 @@ p {
 
 /* tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .collapse-button {
+        border-radius: 5px;
+    }    
+    p {   
+        font-size: 18px;
+    }
+    .collapse-list {
+        margin-left: 1rem;
+    }
 
 }

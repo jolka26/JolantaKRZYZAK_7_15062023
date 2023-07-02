@@ -12,7 +12,7 @@
 .error-image {
     height: 40%;
     width: 40%;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .error-text {
@@ -27,7 +27,7 @@
 }
 
 
-/* Responsywność dla urządzeń mobilnych */
+/* mobile */
 @media only screen and (max-width: 768px) {
       .error-image {
         height: 50%;
@@ -44,12 +44,11 @@
     }
 }
 
-/* Responsywność dla tabletów */
+/* tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-/* Responsywność dla dużych ekranów */
-@media only screen and (min-width: 1025px) {
-
+    .error-image {
+        height: 50%;
+        width: 50%;
+        margin-top: 4rem;
+    }
 }

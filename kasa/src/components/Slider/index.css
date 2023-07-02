@@ -61,6 +61,12 @@
     .slider-active {
         margin-top: 1.5rem;
         height:450px;
-        
+    }
+    .right-arrow, .left-arrow{
+        height: 80px;
+        width: 60px;
+    }
+    .number{
+        font-size: 20px;
     }
 }
