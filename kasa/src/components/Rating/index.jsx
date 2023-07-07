@@ -10,7 +10,7 @@ function Rating({rate}) {
         <div className="stars">
             { stars.map((star) =>
             rate >= star ? (
-                <img key={star.toString()} className="star-icone" src={activeStar} alt="star" />
+                <img key={star.C} className="star-icone" src={activeStar} alt="star" />
             ) : (
                 <img key={star.toString()} className="star-icone" src={inactiveStar} alt="star" />
             )

@@ -16,7 +16,7 @@
 @media only screen and (max-width: 768px) {
     .host-profil{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
     
     .host-name {

@@ -14,6 +14,7 @@ function Apartment() {
     const logement = logements.find((logement) => logement.id === id )
 
 
+    
     if (!logement) {
       return <Error/>
     }
